@@ -18,11 +18,15 @@ public final class TableViewModel<T> {
   }
 
   public var count: Int {
-    return items.count
+    var count = 0
+    queue.sync {
+      count = items.count
+    }
+    return count
   }
 
   public func add(_ item: T) {
-    queue.async {
+    queue.sync {
       let oldCount = self.items.count
       self.items.insert(item, at: 0)
       assert(self.items.count > oldCount)
