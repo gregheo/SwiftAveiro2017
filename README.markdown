@@ -77,4 +77,8 @@ The thread sanitizer only works in the simulator and slows down the app. You can
 
 ![Thread sanitizer](assets/tsan.png)
 
-Hello!
+Here's the lovely retain cycle I made special for this session:
+
+![Retain cycle](assets/cycle.png)
+
+😜
