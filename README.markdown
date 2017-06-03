@@ -67,7 +67,7 @@ FLEX is an amazing debugging tool (not just for view debugging) and it's very ea
 
 ## Part 3: New Debugging Features in Xcode
 
-We looked at the memory graph debugger in Xcode to inspect memory usage and detect retain cycles.  You **can't** use this if you have the thread sanitizer activated
+We looked at the memory graph debugger in Xcode to inspect memory usage and detect retain cycles. Note that you can't activate the memory graph debugger if you have the thread sanitizer option turned on.
 
 ![Memory graph debugger button](assets/memory-graph.png)
 
